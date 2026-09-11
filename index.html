@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aria Madilla Helmi — Student Developer &amp; Creative</title>
+<!-- Google Fonts: Geist & Inter & JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Verbatim Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary": "#00373a",
+            "secondary-fixed-dim": "#7bd0ff",
+            "on-tertiary": "#003824",
+            "inverse-on-surface": "#2d3137",
+            "secondary": "#7bd0ff",
+            "surface-container-low": "#181c22",
+            "on-tertiary-fixed-variant": "#005236",
+            "on-surface-variant": "#b9cacb",
+            "inverse-surface": "#dfe2eb",
+            "error-container": "#93000a",
+            "surface": "#10141a",
+            "surface-container-high": "#262a31",
+            "outline-variant": "#3a494b",
+            "on-primary-fixed": "#002022",
+            "surface-dim": "#10141a",
+            "surface-variant": "#31353c",
+            "surface-tint": "#00dce6",
+            "surface-container": "#1c2026",
+            "surface-container-lowest": "#0a0e14",
+            "primary-container": "#00f2fe",
+            "background": "#10141a",
+            "tertiary-fixed-dim": "#4edea3",
+            "inverse-primary": "#00696f",
+            "tertiary-fixed": "#6ffbbe",
+            "error": "#ffb4ab",
+            "on-background": "#dfe2eb",
+            "secondary-container": "#00a6e0",
+            "primary": "#e0fdff",
+            "tertiary-container": "#67f4b7",
+            "outline": "#849495",
+            "on-surface": "#dfe2eb",
+            "on-secondary": "#00354a",
+            "on-primary-fixed-variant": "#004f53",
+            "on-secondary-fixed": "#001e2c",
+            "surface-container-highest": "#31353c",
+            "on-error": "#690005",
+            "on-tertiary-fixed": "#002113",
+            "on-tertiary-container": "#006e4b",
+            "primary-fixed-dim": "#00dce6",
+            "secondary-fixed": "#c4e7ff",
+            "primary-fixed": "#6ff6ff",
+            "on-secondary-fixed-variant": "#004c69",
+            "surface-bright": "#353940",
+            "on-secondary-container": "#00374d",
+            "on-error-container": "#ffdad6",
+            "tertiary": "#e1ffec",
+            "on-primary-container": "#006a70"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-lg": "4rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "gutter-lg": "2rem",
+            "space-xl": "2.5rem",
+            "gutter-sm": "1rem",
+            "margin-sm": "1rem",
+            "gutter": "1.5rem",
+            "margin": "1.5rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Geist", "sans-serif"],
+            "code-snippet": ["JetBrains Mono", "monospace"],
+            "headline-sm": ["Geist", "sans-serif"],
+            "display-hero-mobile": ["Geist", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "label-mono": ["JetBrains Mono", "monospace"],
+            "body-sm": ["Inter", "sans-serif"],
+            "display-hero": ["Geist", "sans-serif"],
+            "headline-lg": ["Geist", "sans-serif"],
+            "headline-lg-mobile": ["Geist", "sans-serif"]
+          },
+          "fontSize": {
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "code-snippet": ["13px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-mono": ["11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    .tech-grid {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+    }
+    .cyan-glow {
+      box-shadow: 0 0 24px -4px rgba(0, 242, 254, 0.22);
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary font-body-md antialiased relative">
+<!-- Subtle Atmospheric Tech Grid Overlay -->
+<div class="fixed inset-0 pointer-events-none tech-grid z-0 opacity-80 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_20%,#000_70%,transparent_100%)]"></div>
+<!-- Shared Component: TopNavBar (Exact blueprint mapping) -->
+<header class="sticky top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline-variant/30 transition-all duration-200 ease-out">
+<div class="flex justify-between items-center max-w-[1200px] mx-auto px-6 h-16 w-full">
+<!-- Brand Logo Anchor -->
+<a class="flex items-center gap-2 group" href="#">
+<span class="text-headline-sm font-headline-sm text-primary dark:text-primary font-bold tracking-tight">Aria M. Helmi</span>
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary-container dark:text-primary-container font-semibold border-b-2 border-primary-container pb-1 text-body-md font-body-md transition-all" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors pb-1 text-body-md font-body-md" href="#stack">Stack</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors pb-1 text-body-md font-body-md" href="#projects">Projects</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors pb-1 text-body-md font-body-md" href="#journey">Journey</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors pb-1 text-body-md font-body-md" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Action Buttons -->
+<div class="hidden sm:flex items-center gap-3">
+<a class="px-3.5 py-1.5 rounded-lg border border-outline-variant/50 text-on-surface text-body-sm font-body-sm hover:border-primary-container hover:text-primary-container transition-colors" href="#contact">
+          Resume
+        </a>
+<a class="px-4 py-1.5 rounded-lg bg-primary-container text-on-primary-container text-body-sm font-body-sm font-semibold hover:opacity-90 cyan-glow transition-all" href="#contact">
+          Get in Touch
+        </a>
+</div>
+<!-- Mobile Menu Toggle Button -->
+<button aria-label="Toggle Navigation" class="md:hidden p-2 rounded-lg text-on-surface-variant hover:text-primary focus:outline-none" id="mobileMenuBtn">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden md:hidden px-6 pt-2 pb-6 border-b border-outline-variant/30 bg-surface/95 backdrop-blur-xl" id="mobileMenu">
+<div class="flex flex-col gap-4">
+<a class="text-primary-container font-semibold py-1" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary py-1" href="#stack">Stack</a>
+<a class="text-on-surface-variant hover:text-primary py-1" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-primary py-1" href="#journey">Journey</a>
+<a class="text-on-surface-variant hover:text-primary py-1" href="#contact">Contact</a>
+<div class="flex items-center gap-3 pt-3 border-t border-outline-variant/30">
+<a class="w-1/2 text-center py-2 rounded-lg border border-outline-variant/50 text-on-surface text-body-sm" href="#contact">Resume</a>
+<a class="w-1/2 text-center py-2 rounded-lg bg-primary-container text-on-primary-container text-body-sm font-semibold" href="#contact">Get in Touch</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Canvas Content -->
+<main class="relative z-10 max-w-[1200px] mx-auto px-6">
+<!-- 1. Hero Section -->
+<section class="min-h-[calc(100vh-4rem)] flex flex-col justify-center py-16 md:py-24">
+<div class="max-w-3xl space-y-6">
+<!-- Live Status Pill -->
+<div class="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-surface-container-low border border-outline-variant/40 text-on-surface-variant text-label-mono font-label-mono">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span>Currently learning &amp; building</span>
+</div>
+<!-- Name Eyebrow -->
+<div class="tracking-wider text-primary font-headline-sm font-headline-sm text-sm uppercase">
+          ARIA MADILLA HELMI
+        </div>
+<!-- Main Headline -->
+<h1 class="text-display-hero-mobile md:text-display-hero font-display-hero-mobile md:font-display-hero text-primary tracking-tight">
+          Student. Developer.<br class="hidden sm:inline"/>
+<span class="text-primary-container">Creative.</span>
+</h1>
+<!-- Supporting Paragraph -->
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+          I'm a student at <span class="text-primary font-medium">SMK Negeri 1 Cianjur</span> exploring web development, programming, and digital craft. Building practical digital solutions while continuously experimenting with code.
+        </p>
+<!-- Primary Action Cluster -->
+<div class="flex flex-wrap items-center gap-4 pt-4">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm hover:opacity-95 cyan-glow transition-all" href="#projects">
+<span>View My Projects</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-outline-variant/60 bg-surface-container/40 text-on-surface hover:border-primary-container hover:text-primary-container transition-colors" href="#contact">
+<span>Contact Me</span>
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+<!-- Terminal Badge & Quick Info Strip -->
+<div class="pt-8 flex flex-wrap items-center gap-6 text-label-mono font-label-mono text-outline border-t border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="text-primary-container">&gt;</span>
+<span class="text-on-surface-variant">ENV: SMK NEGERI 1 CIANJUR</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-primary-container">&gt;</span>
+<span class="text-on-surface-variant">FOCUS: WEB &amp; FRONTEND</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-primary-container">&gt;</span>
+<span class="text-on-surface-variant">LOC: CIANJUR, INDONESIA</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. About Me Section -->
+<section class="py-20 border-t border-outline-variant/20" id="about">
+<!-- Section Header -->
+<div class="flex items-center gap-3 mb-10">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">About Me</h2>
+</div>
+<!-- Content Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Column: Story & Intentional Note -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+<div class="space-y-4">
+<p class="text-body-lg font-body-lg text-on-surface leading-relaxed">
+              Hello! I'm Aria, an active vocational student programmer at SMK Negeri 1 Cianjur. My journey into tech began with the simple excitement of seeing lines of code transform into responsive, functional web pages.
+            </p>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              I believe in learning through relentless iteration and hands-on trial. Rather than waiting to master everything before building, I prefer diving into the code, debugging real issues, and discovering how modern interfaces work from the ground up.
+            </p>
+</div>
+<!-- The "Coba coba" Intentional Terminal Box -->
+<div class="p-5 rounded-xl bg-surface-container-low border border-outline-variant/40 space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-error/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim/70"></span>
+<span class="text-label-mono font-label-mono text-outline ml-2">philosophy.log</span>
+</div>
+<span class="text-label-mono font-label-mono text-primary-container">student_motto</span>
+</div>
+<div class="pt-2">
+<span class="text-headline-md font-headline-md text-primary tracking-tight">"Coba coba"</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1.5">
+                In Indonesian, <span class="italic text-primary">coba-coba</span> means testing, experimenting, and daring to try. For me, it embodies the fearless curiosity of an aspiring engineer: always willing to write test code, break things in a sandbox, and discover something new every day.
+              </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Micro-Technical Profile Card -->
+<div class="lg:col-span-5 p-6 rounded-xl bg-surface-container border border-outline-variant/40 flex flex-col justify-between relative overflow-hidden">
+<div class="space-y-5">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-label-mono font-label-mono text-primary-container">ENGINEER IDENTITY</span>
+<h3 class="text-headline-md font-headline-md text-primary mt-1">Aria Madilla Helmi</h3>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/60 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+</div>
+</div>
+<!-- Detail List -->
+<div class="space-y-3 pt-2 text-body-sm font-body-sm">
+<div class="flex justify-between py-2 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Institution</span>
+<span class="text-primary font-medium">SMK Negeri 1 Cianjur</span>
+</div>
+<div class="flex justify-between py-2 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Discipline</span>
+<span class="text-primary font-medium">Web Development &amp; Programming</span>
+</div>
+<div class="flex justify-between py-2 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Current Level</span>
+<span class="text-primary-container font-medium">Active Learner &amp; Experimenter</span>
+</div>
+<div class="flex justify-between py-2 border-b border-outline-variant/20">
+<span class="text-on-surface-variant">Base Location</span>
+<span class="text-primary font-medium">Cianjur, West Java, Indonesia</span>
+</div>
+<div class="flex justify-between py-2">
+<span class="text-on-surface-variant">Availability</span>
+<span class="text-tertiary-fixed-dim font-medium flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span> Open for Student Collaboration
+                </span>
+</div>
+</div>
+</div>
+<div class="pt-6 mt-4 border-t border-outline-variant/20 flex items-center justify-between text-label-mono font-label-mono text-outline">
+<span>ID: SMKN1-CIANJUR-DEV</span>
+<span>VER: 2026.04</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Skills & Learning Toolkit -->
+<section class="py-20 border-t border-outline-variant/20" id="stack">
+<!-- Section Header -->
+<div class="max-w-2xl mb-12">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">Skills &amp; Toolkit</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+          Tools and technologies I'm currently learning and using across real experiments and coursework.
+        </p>
+</div>
+<!-- Bento Grid for Skills -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Skill 1: HTML -->
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/40 hover:border-primary-container/50 transition-all group">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="html">html</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low border border-outline-variant/30 text-label-mono font-label-mono text-primary">Core</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-1">HTML</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+            Web structure &amp; semantic markup. Constructing clear DOM hierarchies, accessible forms, and responsive skeletons.
+          </p>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-mono font-label-mono text-tertiary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Foundation Active</span>
+</div>
+</div>
+<!-- Skill 2: JavaScript -->
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/40 hover:border-primary-container/50 transition-all group">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="javascript">javascript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low border border-outline-variant/30 text-label-mono font-label-mono text-secondary-fixed-dim">In Progress</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-1">JavaScript</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+            Programming &amp; web interactivity. DOM manipulation, event-driven scripting, API fetching, and dynamic logic.
+          </p>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-mono font-label-mono text-primary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span>Actively Exploring</span>
+</div>
+</div>
+<!-- Skill 3: Photoshop -->
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/40 hover:border-primary-container/50 transition-all group">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="photo_filter">photo_filter</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low border border-outline-variant/30 text-label-mono font-label-mono text-primary">Creative</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-1">Adobe Photoshop</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+            Digital design &amp; image editing. UI mockup creation, vector shapes, web asset slicing, and photo manipulation.
+          </p>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-mono font-label-mono text-secondary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+<span>Design Workflow</span>
+</div>
+</div>
+<!-- Skill 4: CSS & Tailwind -->
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/40 hover:border-primary-container/50 transition-all group">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary-container text-2xl" data-icon="css">css</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low border border-outline-variant/30 text-label-mono font-label-mono text-primary-container">Toolkit</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mb-1">CSS &amp; Tailwind</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">
+            Modern responsive layouts, Flexbox/Grid mechanics, dark mode architectures, and utility-first design systems.
+          </p>
+<div class="pt-3 border-t border-outline-variant/20 flex items-center gap-1.5 text-label-mono font-label-mono text-tertiary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Regular Practice</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Selected Projects Section -->
+<section class="py-20 border-t border-outline-variant/20" id="projects">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">Selected Projects</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            A collection of things I've built, experimented with, and learned from.
+          </p>
+</div>
+<!-- Editable Template Pill -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container-low border border-outline-variant/40 text-label-mono font-label-mono text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="edit_note">edit_note</span>
+<span>Project Placeholder • Editable Template</span>
+</div>
+</div>
+<!-- 3 Polished Project Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Project 1: BMI Calculator -->
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/40 hover:-translate-y-1 transition-all group">
+<div class="space-y-4">
+<div class="w-full h-40 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col items-center justify-center text-outline-variant p-4 relative overflow-hidden group-hover:border-primary-container/30 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-container/80 mb-2" data-icon="calculate">calculate</span>
+<span class="text-label-mono font-label-mono text-on-surface-variant text-center">BMI CALCULATOR APP</span>
+<span class="text-[10px] text-outline mt-1 font-label-mono">INPUT METRICS • CLASSIFIER</span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<h3 class="text-headline-sm font-headline-sm text-primary group-hover:text-primary-container transition-colors">BMI Calculator</h3>
+<span class="text-label-mono font-label-mono text-outline">01</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                A simple web-based BMI calculator featuring interactive input sliders, dynamic range feedback, and instant health category classification.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">HTML</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">CSS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">JavaScript</span>
+</div>
+</div>
+<!-- Card Action -->
+<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 text-body-sm font-body-sm text-primary-container font-medium hover:underline" href="#contact">
+<span>View Project</span>
+<span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+<span class="text-label-mono font-label-mono text-outline">SMKN1</span>
+</div>
+</div>
+<!-- Project 2: Personal Website -->
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/40 hover:-translate-y-1 transition-all group">
+<div class="space-y-4">
+<div class="w-full h-40 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col items-center justify-center text-outline-variant p-4 relative overflow-hidden group-hover:border-primary-container/30 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-container/80 mb-2" data-icon="web">web</span>
+<span class="text-label-mono font-label-mono text-on-surface-variant text-center">PORTFOLIO v1.0</span>
+<span class="text-[10px] text-outline mt-1 font-label-mono">DARK MODE • RESPONSIVE SHELL</span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<h3 class="text-headline-sm font-headline-sm text-primary group-hover:text-primary-container transition-colors">Personal Website</h3>
+<span class="text-label-mono font-label-mono text-outline">02</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                A personal website experiment focused on responsive web design, obsidian dark mode aesthetics, and clean token-based layout structuring.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">HTML</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">CSS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">JavaScript</span>
+</div>
+</div>
+<!-- Card Action -->
+<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 text-body-sm font-body-sm text-primary-container font-medium hover:underline" href="#contact">
+<span>View Project</span>
+<span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+<span class="text-label-mono font-label-mono text-outline">LIVE</span>
+</div>
+</div>
+<!-- Project 3: JavaScript Experiments -->
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/40 hover:-translate-y-1 transition-all group">
+<div class="space-y-4">
+<div class="w-full h-40 rounded-lg bg-surface-container-low border border-outline-variant/30 flex flex-col items-center justify-center text-outline-variant p-4 relative overflow-hidden group-hover:border-primary-container/30 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary-container/80 mb-2" data-icon="code_blocks">code_blocks</span>
+<span class="text-label-mono font-label-mono text-on-surface-variant text-center">DOM LAB EXPERIMENTS</span>
+<span class="text-[10px] text-outline mt-1 font-label-mono">EVENTS • LOGIC MINI-APPS</span>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<h3 class="text-headline-sm font-headline-sm text-primary group-hover:text-primary-container transition-colors">JavaScript Experiments</h3>
+<span class="text-label-mono font-label-mono text-outline">03</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2 leading-relaxed">
+                Small programming experiments and interactive web exercises exploring core algorithms, DOM event handlers, and lightweight mini-games.
+              </p>
+</div>
+<!-- Tech Tags -->
+<div class="flex flex-wrap gap-1.5 pt-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">JavaScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-label-mono font-label-mono text-on-surface-variant text-xs">Algorithms</span>
+</div>
+</div>
+<!-- Card Action -->
+<div class="pt-6 mt-6 border-t border-outline-variant/20 flex items-center justify-between">
+<a class="inline-flex items-center gap-1.5 text-body-sm font-body-sm text-primary-container font-medium hover:underline" href="#contact">
+<span>View Project</span>
+<span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+<span class="text-label-mono font-label-mono text-outline">REPO</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. My Journey Section -->
+<section class="py-20 border-t border-outline-variant/20" id="journey">
+<!-- Section Header -->
+<div class="max-w-2xl mb-12">
+<div class="flex items-center gap-3 mb-3">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">My Journey</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+          An honest timeline reflecting student progression, current exploration, and the milestones ahead.
+        </p>
+</div>
+<!-- Vertical Timeline -->
+<div class="relative pl-6 md:pl-10 space-y-12 before:absolute before:left-2 md:before:left-3 before:top-2 before:bottom-2 before:w-[1px] before:bg-outline-variant/40">
+<!-- Node 1: 2026 Inception -->
+<div class="relative group">
+<span class="absolute -left-6 md:-left-10 mt-1.5 w-3 md:w-3.5 h-3 md:h-3.5 rounded-full bg-surface-container-lowest border-2 border-primary-container group-hover:scale-125 transition-transform"></span>
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-outline-variant/60 transition-colors">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="text-headline-sm font-headline-sm text-primary">Vocational Inception</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container-low text-label-mono font-label-mono text-primary-container border border-outline-variant/30">2026</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Started developing my technical foundation in web development and programming at <span class="text-primary font-medium">SMK Negeri 1 Cianjur</span>. Began learning basic computer science concepts and crafting first static web layouts.
+            </p>
+</div>
+</div>
+<!-- Node 2: Currently Learning -->
+<div class="relative group">
+<span class="absolute -left-6 md:-left-10 mt-1.5 w-3 md:w-3.5 h-3 md:h-3.5 rounded-full bg-primary-container border-2 border-primary-container shadow-[0_0_10px_rgba(0,242,254,0.8)]"></span>
+<div class="p-6 rounded-xl bg-surface-container border border-primary-container/30 bg-surface-container/80 transition-colors">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="text-headline-sm font-headline-sm text-primary">Practical Experimentation</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container-low text-label-mono font-label-mono text-tertiary-fixed-dim border border-outline-variant/30">CURRENT PHASE</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Diving deeper into modern HTML semantics, JavaScript interactions, Adobe Photoshop graphic design, and building personal projects hands-on. Living out the "coba-coba" mindset every day.
+            </p>
+</div>
+</div>
+<!-- Node 3: Next Milestones -->
+<div class="relative group">
+<span class="absolute -left-6 md:-left-10 mt-1.5 w-3 md:w-3.5 h-3 md:h-3.5 rounded-full bg-surface-container-lowest border-2 border-outline group-hover:border-primary-container transition-colors"></span>
+<div class="p-6 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-outline-variant/60 transition-colors">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<span class="text-headline-sm font-headline-sm text-primary">Next Milestones</span>
+<span class="px-2.5 py-0.5 rounded bg-surface-container-low text-label-mono font-label-mono text-outline border border-outline-variant/30">FUTURE OBJECTIVE</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Building full-stack web applications, contributing to open-source student repositories, mastering backend databases, and refining UI/UX engineering craftsmanship.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Contact Section ('Let's Connect') -->
+<section class="py-20 border-t border-outline-variant/20" id="contact">
+<div class="p-8 md:p-12 rounded-2xl bg-surface-container border border-outline-variant/40 relative overflow-hidden">
+<!-- Subtle Glow Ambient -->
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start relative z-10">
+<!-- Left: Connect Details -->
+<div class="lg:col-span-6 space-y-6">
+<div class="flex items-center gap-3">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">Let's Connect</h2>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+              Have an idea, project, or just want to say hello? I'm always open to discussing web projects, student collaborations, or learning opportunities. Feel free to reach out.
+            </p>
+<div class="space-y-4 pt-4">
+<!-- Phone with quick copy -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-outline-variant/30 group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="call">call</span>
+<div>
+<div class="text-[10px] text-outline font-label-mono">PHONE NUMBER</div>
+<div class="text-body-sm font-body-sm text-primary font-medium" id="phoneText">08xxxxxxxxxx</div>
+</div>
+</div>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="navigator.clipboard.writeText('08xxxxxxxxxx'); alert('Phone copied!');" title="Copy Phone Number">
+<span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+<!-- Email -->
+<div class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container-low border border-outline-variant/30 group">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="mail">mail</span>
+<div>
+<div class="text-[10px] text-outline font-label-mono">EMAIL ADDRESS</div>
+<div class="text-body-sm font-body-sm text-primary font-medium">aria.helmi@example.com</div>
+</div>
+</div>
+<a class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" href="mailto:aria.helmi@example.com">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</a>
+</div>
+<!-- GitHub & Instagram Links -->
+<div class="grid grid-cols-2 gap-3">
+<a class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 hover:border-primary-container/40 transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary-container" data-icon="code">code</span>
+<div class="overflow-hidden">
+<div class="text-[10px] text-outline font-label-mono">GITHUB</div>
+<div class="text-body-sm font-body-sm text-primary truncate">github.com/ariahelmi</div>
+</div>
+</a>
+<a class="flex items-center gap-2.5 p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 hover:border-primary-container/40 transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary-container" data-icon="photo_camera">photo_camera</span>
+<div class="overflow-hidden">
+<div class="text-[10px] text-outline font-label-mono">INSTAGRAM</div>
+<div class="text-body-sm font-body-sm text-primary truncate">@ariahelmi</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Message Launcher -->
+<div class="lg:col-span-6 p-6 rounded-xl bg-surface-container-low border border-outline-variant/30">
+<h3 class="text-headline-sm font-headline-sm text-primary mb-1">Quick Message</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">Send a quick ping straight to my inbox.</p>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Aria will respond shortly.'); this.reset();">
+<div>
+<label class="block text-label-mono font-label-mono text-outline mb-1">YOUR NAME</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface border border-outline-variant/50 text-on-surface placeholder:text-outline-variant text-body-sm focus:outline-none focus:border-primary-container" placeholder="e.g. Alex Pratama" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-mono font-label-mono text-outline mb-1">YOUR EMAIL</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface border border-outline-variant/50 text-on-surface placeholder:text-outline-variant text-body-sm focus:outline-none focus:border-primary-container" placeholder="e.g. alex@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-label-mono font-label-mono text-outline mb-1">MESSAGE</label>
+<textarea class="w-full px-3.5 py-2.5 rounded-lg bg-surface border border-outline-variant/50 text-on-surface placeholder:text-outline-variant text-body-sm focus:outline-none focus:border-primary-container resize-none" placeholder="Let's build something together..." required="" rows="3"></textarea>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-sm font-semibold hover:opacity-90 cyan-glow transition-all flex items-center justify-center gap-2" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Component: Footer (Exact blueprint mapping) -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/20 dark:border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-6 py-10 gap-4 w-full">
+<!-- Brand & Copyright -->
+<div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
+<span class="text-body-md font-headline-sm text-primary dark:text-primary font-semibold">Aria M. Helmi</span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm">
+          © 2025 Aria Madilla Helmi • SMK Negeri 1 Cianjur. All rights reserved.
+        </span>
+</div>
+<!-- Footer Navigation Links -->
+<div class="flex items-center gap-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#projects">Source Code</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#journey">Changelog</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#about">Privacy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-body-sm font-body-sm hover:text-primary-container dark:hover:text-primary-container transition-colors duration-150" href="#stack">Status</a>
+<button aria-label="Back to top" class="p-1 rounded bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+<span class="material-symbols-outlined text-sm" data-icon="arrow_upward">arrow_upward</span>
+</button>
+</div>
+</div>
+</footer>
+<!-- Vanilla Interaction Script -->
+<script>
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu on click of nav items
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+  </script>
+</body></html>
